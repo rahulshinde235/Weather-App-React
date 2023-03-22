@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+:root {
+	--primary-blue: #89cff0;
+	--primary-white: #ffffff;
+	--primary-grey: #D3D3D3;
+}
+
+.weather-app {
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--primary-blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300px;
+}
+
+.weather__app__container {
+	min-width: 200px;
+	width: 100%;
+	max-width: calc(40% - 20px);
+	margin: 0 auto;
+	background-color: #e8e8e8;
+	min-height: 300px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+}
+
+.weather-app-header {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	padding: 20px;
+	border-bottom: 1px solid black;
+}
+
+.weather__app__header-name {
+	height: 20%;
+	color: var(--primary-blue);
+	font-weight: 900;
+	font-size: 24px;
+}
+
+.weather-app-form {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.weather-app-form-input {
+	border: 1px solid var(--primary-grey);
+	padding: 12px;
+	border-radius: 5px;
+	text-align: center;
+	width: 80%;
+}
+
+
+.weather-app-form p {
+	position: relative;
+	max-width: 500px;
+	text-align: center;
+	color: var(--primary-grey);
+}
+
+.weather-app-form p:before {
+	content: " ";
+	height: 2px;
+	width: 130px;
+	background: var(--primary-grey);
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 35px;
+}
+
+.weather-app-form p:after {
+	content: " ";
+	height: 2px;
+	width: 130px;
+	background: var(--primary-grey);
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 35px;
+}
+
+.weather-app-form-button {
+	width: 80%;
+	border: unset;
+	color: var(--primary-white);
+	background: var(--primary-blue);
+	padding: 12px;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.weather__app__container-data-input::placeholder {
+	color: var(--primary-grey);
+}
+
+.weather-app-conditions {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	padding: 1rem;
+}
+
+.weather-app-details {
+	display: flex;
+	justify-content: space-around;
+}
+
+.temp {
+	font-size: 36px;
+	font-weight: 900;
+}
+
+.clouds {
+	text-transform: capitalize;
+}
+
+.location {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.bold-text {
+	font-weight: 500;
+}
+
+.details {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	gap: 0.5rem;
+	padding: 0.5rem 0px;
+}
+
+.weather-app-details-data p {
+	margin: 4px;
+	font-size: 16px;
+}
+
+.border-right {
+	border-right: 1px solid black;
+}
+
+.error {
+	padding: 1rem;
+	color: red;
+	font-size: 24px;
+}
+
+.loading {
+	padding: 1rem;
+	font-size: 24px;
+}
