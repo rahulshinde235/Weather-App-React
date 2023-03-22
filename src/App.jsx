@@ -47,7 +47,7 @@ function App() {
       setError(false);
       try {
         let res = await fetch(
-          `http://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=2&appid=${
+          `https://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=2&appid=${
             import.meta.env.VITE_APP_API_KEY
           }`
         );
