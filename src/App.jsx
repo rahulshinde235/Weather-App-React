@@ -17,10 +17,6 @@ function App() {
   }
 
   function showPosition(position) {
-    setGeolocation({
-      latitude: position.coords.latitude,
-      longitude: position.coords.longitude,
-    });
     setLoading(true);
     setError(false);
     getConditions(position.coords.latitude, position.coords.longitude);
